@@ -22,7 +22,7 @@ static uint32_t crear_mascarilla(int prefixo) {
     return (~0u) << (32 - prefixo);
 }
 
-/* convierte "193.144" -> 193.144.0.0; acepta 1..4 octetos */
+/* convierte "193.144" -> 193.144.0.0 para aceptar 1..4 octetos */
 static uint32_t convertir_a_uint32(const char *direccion) {
     uint32_t resultado = 0;
     const char *ptr = direccion;
