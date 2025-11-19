@@ -40,7 +40,7 @@ static uint32_t convertir_a_uint32(const char *direccion) {
 }
 
 /* cargar rutas en formato: red/prefijo,interfaz
-   admite red con 1..4 octetos (ej. 194.64/16 o 194.64.0.0/16)
+   admite red con uno a catro octetos (ej. 194.64/16 o 194.64.0.0/16)
 */
 static int cargar_rutas(const char *nombre_archivo, Ruta *rutas) {
     FILE *archivo = fopen(nombre_archivo, "r");
